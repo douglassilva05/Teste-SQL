@@ -1,0 +1,8 @@
+
+--Segunda Etapa--
+
+
+SELECT * 
+FROM  endereco_cliente e 
+left JOIN cliente c on e.id=c.id_endereco
+where c.id_endereco is null;
