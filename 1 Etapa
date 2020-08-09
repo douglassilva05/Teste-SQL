@@ -1,0 +1,8 @@
+
+--Primeiro Codigo--
+
+SELECT C.cidade, count(V.ID_ENDERECO) Cliente
+FROM endereco_cliente C left JOIN cliente V ON C.id = V.ID_ENDERECO
+GROUP BY C.cidade
+
+ 
