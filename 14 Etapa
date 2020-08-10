@@ -1,0 +1,7 @@
+
+
+select l.nome , a.data_atendimento
+from local_atendimento l
+right join atendimento a on l.id = a.id_local
+where a.data_atendimento between '01-jan-2016' and '31-dec-2016'
+order by a.data_atendimento desc
