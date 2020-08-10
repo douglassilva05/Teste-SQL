@@ -1,0 +1,4 @@
+select * 
+from atendimento a
+right join cliente c on a.id_cliente = c.id
+where a.id_cliente is null;
