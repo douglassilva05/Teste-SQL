@@ -1,0 +1,4 @@
+select id_local, avg(valor) as Custo_medio_atendimento
+from atendimento
+where data_atendimento between '01-jan-2016' and '31-dec-2016'
+group by id_local;
