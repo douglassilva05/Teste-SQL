@@ -1,0 +1,5 @@
+SELECT c.nome, count(a.id_local) as atendimento_Por_Local, e.cidade
+FROM cliente c
+inner join atendimento a on c.id =a.id_cliente
+inner join endereco_cliente e on a.id_local = e.id
+group by c.nome, e.cidade;
