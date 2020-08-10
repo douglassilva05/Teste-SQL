@@ -1,0 +1,4 @@
+select *  
+from cliente c
+inner join atendimento a on c.id = a.id_cliente
+where a.data_atendimento between '01-jan-2016' and '31-mar-2016'
