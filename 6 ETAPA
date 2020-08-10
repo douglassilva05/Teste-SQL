@@ -1,0 +1,1 @@
+select * from endereco_cliente where cidade not in ('CARUARU')
