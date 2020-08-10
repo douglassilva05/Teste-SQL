@@ -1,0 +1,8 @@
+SELECT 
+a.id as Numero_Atendimento,
+a.data_atendimento,
+c.nome as Nome_cliente,
+e.cidade as Local_Atendimento
+FROM atendimento a
+inner join cliente  c on a.id_cliente = c.id
+inner join endereco_cliente e on a.id_local = e.id
