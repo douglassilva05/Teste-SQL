@@ -1,0 +1,8 @@
+select * 
+from
+(select 
+c.id_endereco as endereco
+from cliente c 
+join endereco_cliente e on c.id_endereco = e.id)
+pivot (sum(valor) for endereco in ([2],[4],[5],[8],[10],[11],[12],[14],[15]))p
+order by 1;
