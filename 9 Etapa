@@ -1,5 +1,5 @@
 select c.nome, count(a.id_cliente) as Quantidade_Atendimentos
 from  cliente c
 inner join atendimento a on c.id= a.id_cliente
-where a.data_atendimento between '01-jan-2016' and '10-nov-2016'
+where a.data_atendimento between '01-jan-2016' and '10-oct-2016'
 group by c.nome;
